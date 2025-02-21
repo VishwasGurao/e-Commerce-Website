@@ -267,3 +267,15 @@ footer {
     color: white;
     padding: 20px;
 }
+.Msg {
+    top: 20%;
+    color: white;
+    text-align: center;  /* Horizontally center */
+    position: absolute;
+    margin-bottom: 40px;       /* Move down 50% from top */
+    left: 50%;           /* Move right 50% from left */
+    transform: translate(-50%, -50%); /* Perfect centering */
+    font-size: 2rem;     /* Adjust text size */
+    font-weight: bold;   /* Make it bold */
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
+}
