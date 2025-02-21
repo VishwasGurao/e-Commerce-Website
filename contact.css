@@ -173,6 +173,26 @@ header nav {
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+.product {
+    background: transparent;
+    border-radius: 45px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 220px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+    overflow: hidden;
+    height: auto;
+}
+
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 15px 30px rgba(255, 255, 255, 0.8)
+}
+
 
 .product:hover {
     transform: scale(1.05);
