@@ -79,7 +79,6 @@ body {
     }
 }
 
-/* Header and Navigation */
 header {
     padding: 15px 0;
     display: flex;
@@ -136,22 +135,8 @@ header nav {
     align-items: center;
     width: 100%;
 }
-
-/* Rest of your product and footer styles remain the same */
-
-.Msg {
-    color: white;
-    text-align: center;  /* Horizontally center */
-    position: absolute;
-    margin-bottom: 40px;       /* Move down 50% from top */
-    left: 50%;           /* Move right 50% from left */
-    transform: translate(-50%, -50%); /* Perfect centering */
-    font-size: 2rem;     /* Adjust text size */
-    font-weight: bold;   /* Make it bold */
-}
-
-/* Product Section */
-.products {
+/* Product Container */
+.product-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -160,7 +145,19 @@ header nav {
     padding: 20px;
 }
 
-/* Product Card */
+.Msg {
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Product Box */
+/* Product Box */
 .product {
     background: transparent;
     border-radius: 45px;
@@ -173,24 +170,17 @@ header nav {
     flex-direction: column;
     word-wrap: break-word;
     overflow: hidden;
-    height: auto;
+    height: 400px;
 }
 
 .product:hover {
     transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 15px 30px rgba(255, 255, 255, 0.8)
 }
+
+
 
 /* Product Image */
-.product-image {
-    width: 200px;
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
-
 .product-image img {
     max-width: 100%;
     max-height: 100%;
@@ -198,100 +188,13 @@ header nav {
     transition: transform 0.3s ease;
 }
 
-.product-image img:hover {
-    transform: scale(1.1);
-}
-
-/* Product Details */
-h1 {
+/* Product Title Inside Box */
+.product-title {
     font-size: 18px;
-    margin: 8px 0;
-    color: white;
-}
-
-.description {
     color: #ffffff;
-    font-size: 14px;
-    text-overflow: ellipsis;
-    max-width: 100%;
-    white-space: normal;
-    height: auto;
-    line-height: 1.4;
-    padding: 0 5px;
-}
-
-.price {
-    
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 10px 12px;
-    border-radius: 30px;
-    transition: color 0.3s ease, transform 0.3s ease, background 0.3s ease;
-}
-
-
-/* Hover Effect */
-
-.price:hover {
-    
-    color: black;
-    background: white;
-     padding: 10px 15px;
-    transform: scale(1.1);
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6); /* Glow effect */
-}
-
-/* Add to Cart Button */
-.add-to-cart {
+    padding: 10px;
     background: transparent;
-    color: rgb(255, 255, 255);
-    padding: 10px 15px;
-    border: none;
-    cursor: pointer;
-    border-radius: 40px;
-    font-size: 14px;
-    transition: background 0.3s ease, transform 0.3s ease;
-}
-
-.add-to-cart:hover {
-    background-color: #0e4fc9;
-    transform: scale(1.1) rotate(3deg);
-    animation: jhoom 0.3s infinite alternate ease-in-out;
-}
-
-/* Animation */
-@keyframes jhoom {
-    0% {
-        transform: scale(1.1) rotate(3deg);
-    }
-    100% {
-        transform: scale(1.1) rotate(-3deg);
-    }
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px;
-    background: transparent;
-    color: white;
-    position: relative;
-    width: 100%;
-    font-size: 16px;
-}
-
-.rate {
-    background-color: green;
-    color: white;
-    border-radius: 5px; /* Slightly rounded corners */
-    padding: 4px 8px; /* Adds spacing inside the box */
-    width: 40px; /* Adjust width as needed */
-    display: inline-block; /* Ensures proper sizing */
-    text-align: center; /* Centers the text inside */
-    font-weight: bold;
-}
-.ratedby {
-    color:rgba(214, 214, 214, 0.849);
-
+    border-radius: 5px;
+    width: 80%;
+    margin: auto;
 }
